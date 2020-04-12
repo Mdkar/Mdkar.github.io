@@ -152,9 +152,14 @@ function drawSet() {
       img.data[set++] = color[2];
       img.data[set++] = 255;
       if((set/4)%width == 0){
+      	break;
+   	  }
+   	  if(j + ((maxy-miny)/height) >= maxy && (set/4)%width != 0){
+   	  	set += 4 * (width - (set/4)%width);
    	  	break;
    	  }
     }
+    //console.log("set/4: " + set/4 + ", width: " + width + " x: " + (i) + " y: " + (j) + "y max: " + maxy)
   }
   ctx.putImageData(img, 0, 0);
 }
