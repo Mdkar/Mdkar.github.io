@@ -38,6 +38,14 @@ function pointerdown_handler(ev) {
 
 function pointermove_handler(ev) {
  // This function implements a 2-pointer horizontal pinch/zoom gesture. 
+ //
+ // If the distance between the two pointers has increased (zoom in), 
+ // the target element's background is changed to "pink" and if the 
+ // distance is decreasing (zoom out), the color is changed to "lightblue".
+ //
+ // This function sets the target element's border to "dashed" to visually
+ // indicate the pointer's target received a move event.
+
  // Find this event in the cache and update its record with this event
  for (var i = 0; i < evCache.length; i++) {
    if (ev.pointerId == evCache[i].pointerId) {
@@ -67,6 +75,7 @@ function pointermove_handler(ev) {
  }
 }
 function pointerup_handler(ev) {
+  log(ev.type, ev);
   // Remove this pointer from the cache and reset the target's
   remove_event(ev);
   // If the number of pointers down is less than two then reset diff tracker
