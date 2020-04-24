@@ -33,7 +33,6 @@ canvas.onpointerleave = pointerup_handler;
 function pointerdown_handler(ev) {
  // The pointerdown event signals the start of a touch interaction.
  // This event is cached to support 2-finger gestures
- alert("pointerDown");
  evCache.push(ev);
 }
 
