@@ -145,15 +145,15 @@ function togglePlay(){
     	play.src="play.png";//want to pause, change to play symbol
     } else {
     	play.src="pause.png";//want to play, change to pause symbol
-    	if(slider.value == slider.max && speed > 0){
-    		slider.value = 0;
+    	if((slider.value == slider.max || slider.value == slider.max-1) && speed > 0){
     		currMove = 0;
+    		slider.value = currMove;
             ctx.clearRect(0,0,canvas.width,canvas.height);
     		drawLoom()
     	}
     	if(slider.value == slider.min && speed < 0){
-    		slider.value = slider.max;
     		currMove = maxMoves-1;
+    		slider.value = currMove;
             ctx.clearRect(0,0,canvas.width,canvas.height);
     		drawLoom()
     	}
@@ -173,16 +173,16 @@ function animate() {
 		window.requestAnimationFrame(animate);
 	} else if(isPlay) {
 		if(speed > 0){
-			currMove == maxMoves-1;
+			currMove = maxMoves-1;
+			slider.value = currMove;
 			ctx.clearRect(0,0,canvas.width,canvas.height);
 	        drawLoom();
-	        slider.value = currMove;
 		}
 		if(speed < 0){
 			currMove = 0;
+			slider.value = currMove;
 			ctx.clearRect(0,0,canvas.width,canvas.height);
 	        drawLoom();
-	        slider.value = currMove;
 		}
 		togglePlay();
 	}
