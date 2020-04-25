@@ -17,6 +17,7 @@ var pegs;
 var moves;
 var currMove;
 var isPlay = false;
+var alphabet = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_';
 
 document.addEventListener('keydown', logKeydown);
 
@@ -45,8 +46,6 @@ function getUrlVars() {
     });
     return vars;
 }
-
-var alphabet = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_';
    
 function toBase64(num) {
 	var s = "";
