@@ -1,13 +1,15 @@
 <!doctype html>
 <head>
 </head>
-<body onload = "drawLoom()" onresize="resizeCanvas()">
+<body onresize="resizeCanvas()">
   <div id="div1" style="width: 0px; margin: auto;">
   <canvas id="canvas1" style="border:1px solid #000000;"> </canvas>
-  <nobr>
-  <input type="button" id="play" value=&#x25b6 onclick="togglePlay()">
-  <input type="range" id="slider" min="0" max="0" value="0" style="width:0px">
+  <nobr style="vertical-align:middle">
+  <input type="image" id="play" src="play.png" style="vertical-align:middle" onclick="togglePlay();blur()">
+  <input type="range" id="slider" min="0" max="0" value="0" style="width:0px; vertical-align:middle">
   </nobr>
+  <br>
+  <small id="speed">Speed: 1x</small>
   <br>
   <input type="file" id="file1">
   </div>
