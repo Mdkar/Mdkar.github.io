@@ -62,7 +62,7 @@ function handleFileSelect(evt) {
                 queryStr += ',';
             }
             queryStr = queryStr.substring(0,queryStr.length-2);
-            baseUrlEnd = window.location.href.indexOf("?data=");
+            var baseUrlEnd = window.location.href.indexOf("?data=");
             if(baseUrlEnd > -1){
                 window.location = window.location.href.substring(0,baseUrlEnd) + queryStr;
             } else {
