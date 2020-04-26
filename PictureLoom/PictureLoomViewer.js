@@ -10,7 +10,8 @@ class Point{
 		return this.y;
 	}
 }
-
+var scale = 0.8;
+var inExternalFrame = false;
 var canvas = document.getElementById('canvas1');
 var div = document.getElementById('div1');
 var div2 = document.getElementById('div2');
@@ -19,8 +20,8 @@ var play = document.getElementById('play');
 var slider = document.getElementById('slider');
 var file = document.getElementById('file1');
 var speedDisp = document.getElementById('speed');
-canvas.width = Math.min(window.innerWidth*0.8, window.innerHeight*0.8);
-canvas.height = Math.min(window.innerWidth*0.8, window.innerHeight*0.8);
+canvas.width = Math.min(window.innerWidth*scale, window.innerHeight*scale);
+canvas.height = Math.min(window.innerWidth*scale, window.innerHeight*scale);
 div.style.width = canvas.width + "px";
 slider.style.width = canvas.width - play.offsetWidth - 5 + "px";
 var ctx = canvas.getContext('2d');
@@ -49,6 +50,9 @@ if(!inIframe()){
 	document.addEventListener('keydown', logKeydown);
     file.addEventListener('change', handleFileSelect, false);
 } else {
+	if(window.top.location.href.indexOf("dkar") == -1){
+	    inExternalFrame = true;
+	}
 	var divSlider = document.getElementById("divSlider");
 	window.addEventListener('message', function(event) {
 		console.log(event);
@@ -61,6 +65,10 @@ if(!inIframe()){
 function handleIframeData(data){
     var dataArr = data.split(",");
     divSlider.hidden = (dataArr[0] == "false");
+    if(divSlider.hidden){
+    	scale = 1;
+    	resizeCanvas();
+    }
     speed = parseInt(dataArr[1]);
 }
 
@@ -224,8 +232,8 @@ function animate() {
 }
 
 function resizeCanvas() {
-	canvas.width = Math.min(window.innerWidth*0.8, window.innerHeight*0.8);
-	canvas.height = Math.min(window.innerWidth*0.8, window.innerHeight*0.8);
+	canvas.width = Math.min(window.innerWidth*scale, window.innerHeight*scale);
+	canvas.height = Math.min(window.innerWidth*scale, window.innerHeight*scale);
 	div.style.width = canvas.width + "px";
 	slider.style.width = canvas.width - play.offsetWidth - 5 + "px";
 	drawLoom();
@@ -253,6 +261,10 @@ function drawLoom() {
 		ctx.lineTo(currPeg.getX(), currPeg.getY());
 		ctx.stroke();
 		ctx.beginPath();
+	}
+	if(inExternalFrame){
+		ctx.font = "10px Arial";
+	    ctx.fillText("mdkar.github.io/PictureLoom", canvas.width-132, canvas.height-5);
 	}
 	
 }
