@@ -31,8 +31,8 @@ var moves;
 var currMove;
 var isPlay = false;
 var speed = 1;
-var alphabet = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_.~:?#[]@!$&()*+;='; //base81
-//WARNING: This uses reserved characters to squeeze more data into a smaller URL, this is non-standard
+var alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^&*()_+-={}|[];:?./"; //base87
+//WARNING: This uses reserved/unsafe characters to squeeze more data into a smaller URL, this is non-standard
 
 document.addEventListener('keydown', logKeydown);
 file.addEventListener('change', handleFileSelect, false);
@@ -59,7 +59,7 @@ function handleFileSelect(evt) {
             var fileSplits = reader.result.split('\n');
             var queryStr = "?data=";
             for(var i = 0; i < fileSplits.length; i++){
-                queryStr += toBase81(parseInt(fileSplits[i]));
+                queryStr += toBase87(parseInt(fileSplits[i]));
                 queryStr += ',';
             }
             queryStr = queryStr.substring(0,queryStr.length-2);
@@ -97,14 +97,14 @@ if(window.location.href.indexOf("data") > -1){
     }
 }
    
-function toBase81(num) {
+function toBase87(num) {
 	var s = "";
 	if(num == 0){
 		return "0";
 	}
 	while(num > 0){
-		s += alphabet[num%81];
-		num = Math.floor(num/81);
+		s += alphabet[num%87];
+		num = Math.floor(num/87);
 	}
 	return s.split("").reverse().join("");
 }
@@ -115,7 +115,7 @@ function toDecimal(str){
     var mul = 1;
     for(var i = 0; i < rev.length; i++){
     	num += alphabet.indexOf(rev[i]) * mul;
-    	mul *= 81;
+    	mul *= 87;
     }
     return num;
 }
