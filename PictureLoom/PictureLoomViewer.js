@@ -125,19 +125,27 @@ function logKeydown(e) {
     	togglePlay();
     }
     if(e.key == 'ArrowLeft'){
-    	speed--;
-    	if(speed < -10){
-    		speed = -10;
-    	}
-    	speedDisp.innerText = "Speed: "+speed+"x";
+    	decreaseSpeed();
     }
     if(e.key == 'ArrowRight'){
-    	speed++;
-    	if(speed > 10){
-    		speed = 10;
-    	}
-    	speedDisp.innerText = "Speed: "+speed+"x";
+    	increaseSpeed();
     }
+}
+
+function increaseSpeed(){
+	speed++;
+	if(speed > 10){
+		speed = 10;
+	}
+	speedDisp.innerText = "Speed: "+speed+"x";
+}
+
+function decreaseSpeed(){
+	speed--;
+	if(speed < -10){
+		speed = -10;
+	}
+	speedDisp.innerText = "Speed: "+speed+"x";
 }
 
 function togglePlay(){
@@ -211,10 +219,13 @@ function drawLoom() {
 	}
 	ctx.beginPath();
 	var currPeg = pegs[moves[0]];
-	ctx.moveTo(currPeg.getX(), currPeg.getY());
+	//ctx.moveTo(currPeg.getX(), currPeg.getY());
 	for(var i = 1; i < currMove; i++){
+		ctx.moveTo(currPeg.getX(), currPeg.getY());
 		currPeg = pegs[moves[i]];
 		ctx.lineTo(currPeg.getX(), currPeg.getY());
+		ctx.stroke();
+		ctx.beginPath();
 	}
-	ctx.stroke();
+	
 }

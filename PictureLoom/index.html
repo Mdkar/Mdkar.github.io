@@ -3,15 +3,19 @@
 </head>
 <body onresize="resizeCanvas()">
   <div id="div1" style="width: 0px; margin: auto;">
-  <canvas id="canvas1" style="border:1px solid #000000;"> </canvas>
-  <nobr style="vertical-align:middle">
-  <input type="image" id="play" src="play.png" style="vertical-align:middle" onclick="togglePlay();blur()">
-  <input type="range" id="slider" min="0" max="0" value="0" style="width:0px; vertical-align:middle">
-  </nobr>
-  <br>
-  <small id="speed">Speed: 1x</small>
-  <br>
-  <input type="file" id="file1">
+    <canvas id="canvas1" style="border:1px solid #000000;"> </canvas>
+    <nobr style="vertical-align:middle">
+      <input type="image" id="play" src="play.png" style="vertical-align:middle" onclick="togglePlay();blur()">
+      <input type="range" id="slider" min="0" max="0" value="0" style="width:0px; vertical-align:middle">
+    </nobr>
+    <br>
+    <nobr>
+      <button type="button" onclick="decreaseSpeed()">&lt&lt</button>
+      <small id="speed">Speed: 1x</small>
+      <button type="button" onclick="increaseSpeed()">&gt&gt</button>
+    </nobr>
+    <br>
+    <input type="file" id="file1">
   </div>
   <script type="text/javascript" src="PictureLoomViewer.js"> </script>
 </body>
