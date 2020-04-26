@@ -50,13 +50,10 @@ if(!inIframe()){
     file.addEventListener('change', handleFileSelect, false);
 } else {
 	window.addEventListener('message', function(event) {
-		alert();
-		//var origin = event.origin || event.originalEvent.origin; // For Chrome, the origin property is in the event.originalEvent object.
-// 		if (origin !== /*the container's domain url*/)
-// 			return;
-// 		if (typeof event.data == 'object' && event.data.call=='sendValue') {
-// 			// Do something with event.data.value;
-// 		}
+		console.log(event);
+	    if (typeof event.data == 'object' && event.data.call=='sendValue') {
+		    alert(event.data.value);// Do something with event.data.value;
+	    }
 	}, false);
 }
 
