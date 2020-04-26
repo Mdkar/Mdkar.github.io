@@ -13,6 +13,8 @@ class Point{
 
 var canvas = document.getElementById('canvas1');
 var div = document.getElementById('div1');
+var div2 = document.getElementById('div2');
+var div3 = document.getElementById('div3');
 var play = document.getElementById('play');
 var slider = document.getElementById('slider');
 var file = document.getElementById('file1');
@@ -33,9 +35,31 @@ var isPlay = false;
 var speed = 1;
 var alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^&*()_+-={}|[];:?./"; //base87
 //WARNING: This uses reserved/unsafe characters to squeeze more data into a smaller URL, this is non-standard
+function inIframe () {
+	try {
+		return window.self !== window.top;
+	} catch (e) {
+		return true;
+	}
+}
 
-document.addEventListener('keydown', logKeydown);
-file.addEventListener('change', handleFileSelect, false);
+if(!inIframe()){
+	div2.hidden = false;
+	div3.hidden = false;
+	document.addEventListener('keydown', logKeydown);
+    file.addEventListener('change', handleFileSelect, false);
+} else {
+	window.addEventListener('message', function(event) {
+		alert();
+		//var origin = event.origin || event.originalEvent.origin; // For Chrome, the origin property is in the event.originalEvent object.
+// 		if (origin !== /*the container's domain url*/)
+// 			return;
+// 		if (typeof event.data == 'object' && event.data.call=='sendValue') {
+// 			// Do something with event.data.value;
+// 		}
+	}, false);
+}
+
 slider.addEventListener('input', handleSlider, false);
 var reader = new FileReader();
 
