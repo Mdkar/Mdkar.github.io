@@ -49,12 +49,19 @@ if(!inIframe()){
 	document.addEventListener('keydown', logKeydown);
     file.addEventListener('change', handleFileSelect, false);
 } else {
+	var divSlider = document.getElementById("divSlider");
 	window.addEventListener('message', function(event) {
 		console.log(event);
 	    if (typeof event.data == 'object' && event.data.call=='sendValue') {
-		    alert(event.data.value);// Do something with event.data.value;
+		    handleIframeData(event.data.value);// Do something with event.data.value;
 	    }
 	}, false);
+}
+
+function handleIframeData(data){
+    var dataArr = data.split(",");
+    divSlider.hidden = (dataArr[0] == "false");
+    speed = parseInt(dataArr[1]);
 }
 
 slider.addEventListener('input', handleSlider, false);
