@@ -66,6 +66,7 @@ function handleIframeData(data){
     var dataArr = data.split(",");
     divSlider.hidden = (dataArr[0] == "false");
     if(divSlider.hidden){
+    	document.getElementsByTagName("body")[0].style.margin = 0;
     	scale = 1;
     	resizeCanvas();
     }
