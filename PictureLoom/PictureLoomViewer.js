@@ -31,7 +31,8 @@ var moves;
 var currMove;
 var isPlay = false;
 var speed = 1;
-var alphabet = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_';
+var alphabet = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_.~:?#[]@!$&()*+;='; //base81
+//WARNING: This uses reserved characters to squeeze more data into a smaller URL, this is non-standard
 
 document.addEventListener('keydown', logKeydown);
 file.addEventListener('change', handleFileSelect, false);
@@ -58,13 +59,14 @@ function handleFileSelect(evt) {
             var fileSplits = reader.result.split('\n');
             var queryStr = "?data=";
             for(var i = 0; i < fileSplits.length; i++){
-                queryStr += toBase64(parseInt(fileSplits[i]));
+                queryStr += toBase81(parseInt(fileSplits[i]));
                 queryStr += ',';
             }
             queryStr = queryStr.substring(0,queryStr.length-2);
             var baseUrlEnd = window.location.href.indexOf("?data=");
             if(baseUrlEnd > -1){
-                window.location = window.location.href.substring(0,baseUrlEnd) + queryStr;
+            	var baseUrl = window.location.href.substring(0,baseUrlEnd);
+                window.location = baseUrl + queryStr;
             } else {
             	window.location = window.location.href + queryStr;
             }
@@ -73,7 +75,7 @@ function handleFileSelect(evt) {
 }
 
 if(window.location.href.indexOf("data") > -1){
-    var data = getUrlVars()["data"];
+    var data = window.location.href.substring(window.location.href.indexOf("?data=")+6);
     var splits = data.split(',');
     if(splits.length > 4){
         nPegs = toDecimal(splits[0]);
@@ -94,23 +96,15 @@ if(window.location.href.indexOf("data") > -1){
     	alert("Invalid Data");
     }
 }
-
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
-    return vars;
-}
    
-function toBase64(num) {
+function toBase81(num) {
 	var s = "";
 	if(num == 0){
 		return "0";
 	}
 	while(num > 0){
-		s += alphabet[num%64];
-		num = Math.floor(num/64);
+		s += alphabet[num%81];
+		num = Math.floor(num/81);
 	}
 	return s.split("").reverse().join("");
 }
@@ -121,7 +115,7 @@ function toDecimal(str){
     var mul = 1;
     for(var i = 0; i < rev.length; i++){
     	num += alphabet.indexOf(rev[i]) * mul;
-    	mul *= 64;
+    	mul *= 81;
     }
     return num;
 }
