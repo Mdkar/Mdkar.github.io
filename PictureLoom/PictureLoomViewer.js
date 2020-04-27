@@ -96,7 +96,9 @@ function handleIframeData(data){
         }
         speed = parseInt(dataArr[2]);
         animationFunc = new Function('return ' + dataArr[3])()
-        console.log(animationFunc.toString());
+        if(divSlider.hidden){
+        	togglePlay();
+        }
     }
 }
 
@@ -292,7 +294,7 @@ function drawLoom() {
 	}
 	if(inExternalFrame){
 		ctx.font = "10px Arial";
-	    ctx.fillText("mdkar.github.io/PictureLoom", canvas.width-132, canvas.height-5);
+	    ctx.fillText("mdkar.github.io/PictureLoom", canvas.width-132, canvas.height);
 	}
 	
 }
