@@ -93,7 +93,7 @@ function handleIframeData(data){
     	    scale = 1;
     	    resizeCanvas();
         }
-        speed = parseInt(dataArr[2]);
+        speed = parseFloat(dataArr[2]);
         animationFunc = new Function('return ' + dataArr[3])()
         if(divSlider.hidden){
         	togglePlay();
