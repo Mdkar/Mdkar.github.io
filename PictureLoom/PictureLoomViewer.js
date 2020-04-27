@@ -22,6 +22,7 @@ var slider = document.getElementById('slider');
 var file = document.getElementById('file1');
 var speedDisp = document.getElementById('speed');
 var loop = document.getElementById('loop');
+var colorBox = document.getElementById('color');
 canvas.width = Math.min(window.innerWidth*scale, window.innerHeight*scale);
 canvas.height = Math.min(window.innerWidth*scale, window.innerHeight*scale);
 div.style.width = canvas.width + "px";
@@ -37,6 +38,7 @@ var currMove;
 var isPlay = false;
 var speed = 1;
 var animationFunc;
+var color = "000000";
 var alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^&*()_+-={}|[];:?./"; //base87
 //WARNING: This uses reserved/unsafe characters to squeeze more data into a smaller URL, this is non-standard
 function inIframe () {
@@ -54,6 +56,13 @@ if(!inIframe()){
 	div3.hidden = false;
 	document.addEventListener('keydown', logKeydown);
     file.addEventListener('change', handleFileSelect, false);
+    colorBox.addEventListener('change', function (event) {
+    	if(colorBox.value.length == 6){
+    		color = colorBox.value;
+    		ctx.clearRect(0,0,canvas.width,canvas.height);
+    		drawLoom();
+    	}
+    });
     loop.addEventListener('change', function (event) {
         if (loop.checked) {
             animationFunc = function () {
@@ -95,6 +104,7 @@ function handleIframeData(data){
         }
         speed = parseFloat(dataArr[2]);
         animationFunc = new Function('return ' + dataArr[3])()
+        color = dataArr[4];
         if(divSlider.hidden){
         	togglePlay();
         	window.setTimeout(function(){if(!isPlay){togglePlay();}},100);
@@ -269,9 +279,17 @@ function resizeCanvas() {
 	drawLoom();
 }
 
+function hexToRgb(hex) {
+  return hex ? {
+    r: parseInt(hex[0]+hex[1], 16),
+    g: parseInt(hex[2]+hex[3], 16),
+    b: parseInt(hex[4]+hex[5], 16)
+  } : null;
+}
+
 function drawLoom() {
 	ctx.fillStyle = "#000000";
-    ctx.strokeStyle = 'rgba(0,0,0,'+lineWeight/255+')';
+    ctx.strokeStyle = 'rgba('+hexToRgb(color).r+','+hexToRgb(color).g+','+hexToRgb(color).b+','+lineWeight/255+')';
 	var angle = 0;
 	for(var i = 0; i < nPegs; i++) {
    	    pegX = canvas.width/2 + canvas.width * Math.cos(angle)/2;
