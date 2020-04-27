@@ -46,15 +46,14 @@ function inIframe () {
 		return true;
 	}
 }
-
+animationFunc = function () {
+    return currMove+speed;
+};
 if(!inIframe()){
 	div2.hidden = false;
 	div3.hidden = false;
 	document.addEventListener('keydown', logKeydown);
     file.addEventListener('change', handleFileSelect, false);
-    animationFunc = function () {
-        return currMove+speed;
-    };
     loop.addEventListener('change', function (event) {
         if (loop.checked) {
             animationFunc = function () {
@@ -97,6 +96,7 @@ function handleIframeData(data){
         }
         speed = parseInt(dataArr[2]);
         animationFunc = new Function('return ' + dataArr[3])()
+        console.log(animationFunc.toString());
     }
 }
 
