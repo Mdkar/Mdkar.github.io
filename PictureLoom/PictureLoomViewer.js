@@ -11,6 +11,7 @@ class Point{
 	}
 }
 var scale = 0.8;
+var currFrame = 0;
 var inExternalFrame = false;
 var canvas = document.getElementById('canvas1');
 var div = document.getElementById('div1');
@@ -20,6 +21,7 @@ var play = document.getElementById('play');
 var slider = document.getElementById('slider');
 var file = document.getElementById('file1');
 var speedDisp = document.getElementById('speed');
+var loop = document.getElementById('loop');
 canvas.width = Math.min(window.innerWidth*scale, window.innerHeight*scale);
 canvas.height = Math.min(window.innerWidth*scale, window.innerHeight*scale);
 div.style.width = canvas.width + "px";
@@ -34,6 +36,7 @@ var moves;
 var currMove;
 var isPlay = false;
 var speed = 1;
+var animationFunc;
 var alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^&*()_+-={}|[];:?./"; //base87
 //WARNING: This uses reserved/unsafe characters to squeeze more data into a smaller URL, this is non-standard
 function inIframe () {
@@ -49,9 +52,29 @@ if(!inIframe()){
 	div3.hidden = false;
 	document.addEventListener('keydown', logKeydown);
     file.addEventListener('change', handleFileSelect, false);
+    animationFunc = function () {
+        return currMove+speed;
+    };
+    loop.addEventListener('change', function (event) {
+        if (loop.checked) {
+            animationFunc = function () {
+            	var c = (maxMoves/2)*(1+Math.cos(speed*currFrame/20))
+            	if(c == maxMoves){
+            		currFrame = 0;
+            	}
+            	currFrame++; 
+                return c;
+            };
+        } else {
+            animationFunc = function () {
+                return currMove+speed;
+            };
+        }
+    });
 } else {
 	if(window.top.location.href.indexOf("dkar") == -1){
 	    inExternalFrame = true;
+	    document.getElementById("canvasLink").href="https://mdkar.github.io/";
 	}
 	var divSlider = document.getElementById("divSlider");
 	window.addEventListener('message', function(event) {
@@ -63,14 +86,18 @@ if(!inIframe()){
 }
 
 function handleIframeData(data){
-    var dataArr = data.split(",");
-    divSlider.hidden = (dataArr[0] == "false");
-    if(divSlider.hidden){
-    	document.getElementsByTagName("body")[0].style.margin = 0;
-    	scale = 1;
-    	resizeCanvas();
+    var dataArr = data.split("#");
+    if(dataArr[0] == "params"){
+    	divSlider.hidden = (dataArr[1] == "false");
+        if(divSlider.hidden){
+    	    document.getElementsByTagName("body")[0].style.margin = 0;
+    	    canvas1.style.border = "none";
+    	    scale = 1;
+    	    resizeCanvas();
+        }
+        speed = parseInt(dataArr[2]);
+        animationFunc = new Function('return ' + dataArr[3])()
     }
-    speed = parseInt(dataArr[1]);
 }
 
 slider.addEventListener('input', handleSlider, false);
@@ -212,7 +239,7 @@ function animate() {
 	ctx.clearRect(0,0,canvas.width,canvas.height);
 	drawLoom();
 	slider.value = currMove;
-	currMove += speed;
+	currMove = animationFunc();
 	if(isPlay && currMove < maxMoves && currMove >= 0){
 		window.requestAnimationFrame(animate);
 	} else if(isPlay) {

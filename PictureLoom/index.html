@@ -6,7 +6,9 @@
 </head>
 <body onresize="resizeCanvas()">
   <div id="div1" style="width: 0px; margin: auto;">
-    <canvas id="canvas1" style="border:1px solid #000000;"> </canvas>
+    <a id="canvasLink">
+      <canvas id="canvas1" style="border:1px solid #000000;"></canvas>
+    </a>
     <div id="divSlider" visible>
       <nobr style="vertical-align:middle">
         <input type="image" id="play" src="play.png" style="vertical-align:middle" onclick="togglePlay();blur()">
@@ -18,6 +20,8 @@
         <button type="button" onclick="decreaseSpeed()">&lt&lt</button>
         <small id="speed">Speed: 1x</small>
         <button type="button" onclick="increaseSpeed()">&gt&gt</button>
+        &nbsp;
+        <input type="checkbox" id="loop"> Loop </input>
       </nobr>
       <br>
       <input type="file" id="file1">
