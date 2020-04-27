@@ -77,7 +77,6 @@ if(!inIframe()){
 	}
 	var divSlider = document.getElementById("divSlider");
 	window.addEventListener('message', function(event) {
-		console.log(event);
 	    if (typeof event.data == 'object' && event.data.call=='sendValue') {
 		    handleIframeData(event.data.value);// Do something with event.data.value;
 	    }
@@ -97,6 +96,7 @@ function handleIframeData(data){
         speed = parseInt(dataArr[2]);
         animationFunc = new Function('return ' + dataArr[3])()
         if(divSlider.hidden){
+        	togglePlay();
         	togglePlay();
         }
     }
@@ -294,7 +294,7 @@ function drawLoom() {
 	}
 	if(inExternalFrame){
 		ctx.font = "10px Arial";
-	    ctx.fillText("mdkar.github.io/PictureLoom", canvas.width-132, canvas.height);
+	    ctx.fillText("mdkar.github.io/PictureLoom", canvas.width-132, canvas.height-2);
 	}
 	
 }
