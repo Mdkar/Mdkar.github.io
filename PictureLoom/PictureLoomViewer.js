@@ -96,7 +96,7 @@ function handleIframeData(data){
         speed = parseInt(dataArr[2]);
         animationFunc = new Function('return ' + dataArr[3])()
         if(divSlider.hidden){
-        	togglePlay();
+        	play.click();
         }
     }
 }
