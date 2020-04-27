@@ -314,5 +314,25 @@ function drawLoom() {
 		ctx.font = "10px Arial";
 	    ctx.fillText("mdkar.github.io/PictureLoom", canvas.width-132, canvas.height-2);
 	}
-	
+}
+
+function copyEmbed(){
+	if(document.getElementById('embedText') === null){
+		var str = '<iframe id="iframe" height="600" width="600" scrolling="no" style="border:none; overflow:hidden;" onload="loadFrame()" src="';
+		str += window.location.href;
+		str += '"></iframe>\n<script>\nvar iframe_animation_func = ';
+		str += animationFunc.toString();
+		str += '\n//format: "params"#show_slider#speed#animation_func#hexcolor\n'
+		str += 'var s = "params#' + !isPlay + '#' + speed + '#' + '"+iframe_animation_func.toString()+"#' + color +'";\n'
+		str += 'function loadFrame(){\n\tvar frame = document.getElementById("iframe");\n\tframe.contentWindow.postMessage({call:\'sendValue\', value: s}, "*");}\n';
+		str += '</script>';
+		var el = document.createElement('textarea');
+		el.value = str;
+		el.id = 'embedText';
+		document.getElementById('div2').appendChild(el);
+		el.select();
+		document.execCommand('copy');
+	} else {
+		document.getElementById('div2').removeChild(document.getElementById('embedText'));
+	}
 }
