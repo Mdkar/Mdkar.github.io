@@ -71,7 +71,7 @@ if(!inIframe()){
         }
     });
 } else {
-	if(window.top.location.href.indexOf("dkar") == -1){
+	if(document.referrer.indexOf("dkar") == -1){
 	    inExternalFrame = true;
 	    document.getElementById("canvasLink").href="https://mdkar.github.io/";
 	}
