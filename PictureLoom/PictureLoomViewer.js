@@ -97,7 +97,7 @@ function handleIframeData(data){
         animationFunc = new Function('return ' + dataArr[3])()
         if(divSlider.hidden){
         	play.click();
-        	play.click();
+        	window.setTimeout(play.click(),100);
         }
     }
 }
