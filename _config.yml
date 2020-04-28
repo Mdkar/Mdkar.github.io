@@ -239,10 +239,10 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _music+art
+  # _musicart
   - scope:
       path: ""
-      type: music+art
+      type: musicart
     values:
       layout: single
       author_profile: true
