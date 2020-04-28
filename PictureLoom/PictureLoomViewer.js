@@ -321,7 +321,7 @@ function copyEmbed(){
 		var str = '<iframe id="iframe" height="600" width="600" scrolling="no" style="border:none; overflow:hidden;" onload="loadFrame()" src="';
 		str += window.location.href;
 		str += '"></iframe>\n<script>\nvar iframe_animation_func = ';
-		str += animationFunc.toString();
+		str += animationFunc.toString()+';';
 		str += '\n//format: "params"#show_slider#speed#animation_func#hexcolor\n'
 		str += 'var s = "params#' + !isPlay + '#' + speed + '#' + '"+iframe_animation_func.toString()+"#' + color +'";\n'
 		str += 'function loadFrame(){\n\tvar frame = document.getElementById("iframe");\n\tframe.contentWindow.postMessage({call:\'sendValue\', value: s}, "*");}\n';
