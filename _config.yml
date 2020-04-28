@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Mihir Dhamankar"
 title_separator          : "-"
 name                     : &name "Mihir Dhamankar"
-description              : &description "personal description"
+description              : &description "student"
 url                      : https://mdkar.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mdkar/mdkar.github.io"
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -239,7 +239,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # music+art
+  # _music+art
   - scope:
       path: ""
       type: music+art
