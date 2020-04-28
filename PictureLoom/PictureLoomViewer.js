@@ -66,7 +66,7 @@ if(!inIframe()){
     loop.addEventListener('change', function (event) {
         if (loop.checked) {
             animationFunc = function () {
-            	var c = (maxMoves/2)*(1+Math.cos(speed*currFrame/20))
+            	var c = (maxMoves/2)*(1+Math.cos(speed*currFrame/20));
             	if(c == maxMoves){
             		currFrame = 0;
             	}
