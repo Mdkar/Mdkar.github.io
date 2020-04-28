@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Mihir Dhamankar"
   avatar           : "Mihir_profile.jpg"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Conestoga High School '20\nCMU SCS '24"
   location         : "Wayne, PA"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : #"http://yourfullgooglescholarurl.com"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -94,12 +94,12 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "https://www.facebook.com/mihir.dhamankar.549"
   foursquare       :
   github           : "Mdkar"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "m_dkar"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : #"replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
@@ -181,7 +181,10 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  music/art:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -227,10 +230,19 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _projects
   - scope:
       path: ""
-      type: portfolio
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # music+art
+  - scope:
+      path: ""
+      type: music+art
     values:
       layout: single
       author_profile: true
