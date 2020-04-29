@@ -3,8 +3,8 @@ main:
   - title: "Projects"
     url: /projects/
 
-  - title: "Experience"
-    url: /experience/
-
   - title: "Music/Art"
     url: /music+art/
+    
+  - title: "Experience"
+    url: /experience/
