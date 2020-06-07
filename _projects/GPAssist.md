@@ -27,15 +27,17 @@ by clicking on the “Raw” button (a Tampermonkey page should pop up shortly a
   * There should be a graph of grades of core classes
   * There should be a sidebar on the right side saying “GPAssist”
     * Click on the sidebar to reveal it
-  **Graph Features:**
-  * Mousing over the bar chart of grades shows their percent values
-	* Clicking on one of the bars takes you to the grades page of that class
-  * On a course’s grades page, clicking the new “Graphical View” button shows a graph of grades for each marking period
-  * Clicking on one of the bars shows a breakdown of categories in that MP (click on “Graphical View)
-  **Sidebar Features:**
-  * 1st time you pull it up, you will see a list of all classes you are in. You can probably press continue without changing anything. The script automatically tries to detect which classes are core classes and their respective levels, but there are manual override level selectors and “Add” and “Remove” buttons if needed.
-  * Next menu is your estimated weighted GPA, a list of core classes, and a feedback button (please give us your opinions and bugs!)
-  * Clicking on a class in the list will give you a MP history of grades, letting you edit the current MP grades
-    * _You can directly change the current MP grade or add new assignments to see how your MP grade (and GPA) changes_
-    * Add in a midterm/final grade to make the GPA more accurate (as mentioned in the disclaimer, this tool will never be 100% accurate as we do not have access to grades in the HAC and we are not 100% sure on how the school handles rounding when calculating it)
-  * You can do the same in a course’s grade page, but only that class is available in the menu and the GPA is the GPA in that particular class
+
+**Graph Features:**
+* Mousing over the bar chart of grades shows their percent values
+* Clicking on one of the bars takes you to the grades page of that class
+* On a course’s grades page, clicking the new “Graphical View” button shows a graph of grades for each marking period
+* Clicking on one of the bars shows a breakdown of categories in that MP (click on “Graphical View)
+
+**Sidebar Features:**
+* 1st time you pull it up, you will see a list of all classes you are in. You can probably press continue without changing anything. The script automatically tries to detect which classes are core classes and their respective levels, but there are manual override level selectors and “Add” and “Remove” buttons if needed.
+* Next menu is your estimated weighted GPA, a list of core classes, and a feedback button (please give us your opinions and bugs!)
+* Clicking on a class in the list will give you a MP history of grades, letting you edit the current MP grades
+  * _You can directly change the current MP grade or add new assignments to see how your MP grade (and GPA) changes_
+  * Add in a midterm/final grade to make the GPA more accurate (as mentioned in the disclaimer, this tool will never be 100% accurate as we do not have access to grades in the HAC and we are not 100% sure on how the school handles rounding when calculating it)
+* You can do the same in a course’s grade page, but only that class is available in the menu and the GPA is the GPA in that particular class
