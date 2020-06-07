@@ -41,3 +41,5 @@ by clicking on the “Raw” button (a Tampermonkey page should pop up shortly a
   * _You can directly change the current MP grade or add new assignments to see how your MP grade (and GPA) changes_
   * Add in a midterm/final grade to make the GPA more accurate (as mentioned in the disclaimer, this tool will never be 100% accurate as we do not have access to grades in the HAC and we are not 100% sure on how the school handles rounding when calculating it)
 * You can do the same in a course’s grade page, but only that class is available in the menu and the GPA is the GPA in that particular class
+
+Mihir Dhamankar and Rohit Chatterjee
