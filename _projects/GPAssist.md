@@ -39,7 +39,8 @@ by clicking on the “Raw” button (a Tampermonkey page should pop up shortly a
 * Next menu is your estimated weighted GPA, a list of core classes, and a feedback button (please give us your opinions and bugs!)
 * Clicking on a class in the list will give you a MP history of grades, letting you edit the current MP grades
   * _You can directly change the current MP grade or add new assignments to see how your MP grade (and GPA) changes_
-  * Add in a midterm/final grade to make the GPA more accurate (as mentioned in the disclaimer, this tool will never be 100% accurate as we do not have access to grades in the HAC and we are not 100% sure on how the school handles rounding when calculating it)
+  * Add in a midterm/final grade to make the GPA more accurate (as mentioned in the disclaimer, this tool will never be 100% accurate as we do not have access to grades in Powerschool and we are not 100% sure on how the school handles rounding when calculating it)
+  * The change in final grade calculations for the 2019-20 school year due to the Covid-19 pandemic is not accounted for
 * You can do the same in a course’s grade page, but only that class is available in the menu and the GPA is the GPA in that particular class
 
 Mihir Dhamankar and Rohit Chatterjee
