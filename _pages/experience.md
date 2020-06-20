@@ -50,7 +50,14 @@ Awards & Honors
 
 Service and leadership
 ======
-* 
+* Peer Mentor with [Friends Fitness](https://youthmp.org/programs/), a program by the Youth Mentoring Partnership - since October 2018
+* National Honor Society Peer Tutor
+
+Hobbies
+======
+<ul>{% for post in site.musicart %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
 
 Foreign Languages
 ======
