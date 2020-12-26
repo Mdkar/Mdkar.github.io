@@ -12,14 +12,12 @@ Education
 ======
 * B.S in Computer Science, [Carnegie Mellon University](https://www.cs.cmu.edu/), 2024 (expected)
   * Relavant Coursework: Principles of Functional Programming, Probability Theory, Matrices and Linear Transformations, Rapid Prototyping Technologies
-  * Activities: 
-    * [Anvil](https://cmuanvil.wordpress.com/) Education co-chair
-    * [Deewane](https://cmudeewane.com/) A Cappella member
+  * Activities: [Anvil](https://cmuanvil.wordpress.com/) Education co-chair, [Deewane](https://cmudeewane.com/) A Cappella member
 * Carnegie Mellon University Summer Session 2019 (4.0 QPA)
   * Courses: Concepts of Mathematics, Principles of Imperative Computation
 * High School Diploma, [Conestoga High School](https://www.tesd.net/stoga), 2020
 
-Work experience
+Work Experience
 ======
 * November 2018 - August 2020: Shelving Assistant
   * [Tredyffrin Public Library](https://www.tredyffrinlibraries.org/tredyffrin-public-library/general-information/)
@@ -61,7 +59,7 @@ Awards & Honors
 * [Chester County Student Invention Convention](https://www.cciu.org/INVENT) Semi-Finalist – 2019
 * College Board National AP Scholar
 
-* <details>
+<details>
 <summary> Conestoga High School Awards and Honors </summary>
 
   * US Air Force Math and Science Award - June 2020
