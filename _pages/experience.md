@@ -60,7 +60,9 @@ Awards & Honors
 * College Board National AP Scholar
 
 <details>
-  <summary> Conestoga High School Awards and Honors </summary>
+  <summary> 
+  Conestoga High School Awards and Honors 
+  </summary>
 
   * US Air Force Math and Science Award - June 2020
   * Choir Director's Award - June 2020
