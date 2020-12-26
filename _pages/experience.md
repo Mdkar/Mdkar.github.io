@@ -11,6 +11,12 @@ redirect_from:
 Education
 ======
 * B.S in Computer Science, [Carnegie Mellon University](https://www.cs.cmu.edu/), 2024 (expected)
+  * Relavant Coursework: Principles of Functional Programming, Probability Theory, Matrices and Linear Transformations, Rapid Prototyping Technologies
+  * Activities: 
+    * [Anvil](https://cmuanvil.wordpress.com/) Education co-chair
+    * [Deewane](https://cmudeewane.com/) A Cappella member
+* Carnegie Mellon University Summer Session 2019 (4.0 QPA)
+  * Courses: Concepts of Mathematics, Principles of Imperative Computation
 * High School Diploma, [Conestoga High School](https://www.tesd.net/stoga), 2020
 
 Work experience
@@ -53,13 +59,14 @@ Awards & Honors
 * [UPenn PClassic](https://pclassic.org/) 1st Place Novice Division - Nov 2018
 * [PA Governor’s STEM competition](https://www.cciu.org/JOBS1st) 2nd place in Chester County - 2018-19
 * [Chester County Student Invention Convention](https://www.cciu.org/INVENT) Semi-Finalist – 2019
-* PMEA District 12 Choir - 2019 and 2020
 * College Board National AP Scholar
 
-<details>
-<summary>* Conestoga High School </summary>
+* <details>
+<summary> Conestoga High School Awards and Honors </summary>
+
   * US Air Force Math and Science Award - June 2020
   * Choir Director's Award - June 2020
+  * PMEA District 12 Choir - 2019 and 2020
   * Rochester Institute of Technology Innovation and Creativity Award - May 2019
     * Conestoga Junior Award for Creativity, Innovation, Leadership and Academic Excellence
   * Conestoga Service and Leadership Award - 2017, 2018, 2019, and 2020
@@ -76,6 +83,17 @@ Foreign Languages
 * Marathi - very fluent
 * Spanish - fluent
 * Hindi - conversational
+
+Skills
+======
+* Programming languages:
+  * Java (3+ yrs)
+  * SML
+  * C/C++
+  * JavaScript
+* SOLIDWORKS
+* Git
+* LaTeX
 
 Hobbies
 ======
