@@ -13,7 +13,7 @@ Education
 * B.S in Computer Science, [Carnegie Mellon University](https://www.cs.cmu.edu/), 2024 (expected)
   * Relavant Coursework: Principles of Functional Programming, Probability Theory, Matrices and Linear Transformations, Rapid Prototyping Technologies
   * Activities: [Anvil](https://cmuanvil.wordpress.com/) Education co-chair, [Deewane](https://cmudeewane.com/) A Cappella member
-* Carnegie Mellon University Summer Session 2019 (4.0 QPA)
+* Carnegie Mellon University [Summer Session](https://www.cmu.edu/pre-college/academic-programs/summer-session.html) 2019 (4.0 QPA)
   * Courses: Concepts of Mathematics, Principles of Imperative Computation
 * High School Diploma, [Conestoga High School](https://www.tesd.net/stoga), 2020
 
@@ -60,7 +60,7 @@ Awards & Honors
 * College Board National AP Scholar
 
 <details>
-<summary> Conestoga High School Awards and Honors </summary>
+  <summary> Conestoga High School Awards and Honors </summary>
 
   * US Air Force Math and Science Award - June 2020
   * Choir Director's Award - June 2020
