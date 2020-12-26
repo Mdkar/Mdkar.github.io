@@ -49,7 +49,7 @@ Leadership and Volunteer Experience
 
 Awards & Honors
 ======
-* National Merit Finalist - 2020
+* [National Merit](https://www.nationalmerit.org/) Finalist - 2020
 * [Yale Bassett Award for Community Engagement](https://news.yale.edu/2019/04/23/yale-honors-high-school-juniors-who-are-making-difference-world) National Semi-Finalist – 2019
   * for a record of creative leadership, public service, academic distinction, interdisciplinary problem solving, and experience addressing societal issues
 * [Draw the Lines PA Mapping Competition](https://drawthelinespa.org/about-us/team-main-line-line-drawers-2nd-youth-east) 2nd place Youth East Division - Spring 2019
@@ -60,7 +60,7 @@ Awards & Honors
 * College Board National AP Scholar
 
 <details>
-  <summary> 
+  <summary markdown='span'> 
   Conestoga High School Awards and Honors 
   </summary>
 
