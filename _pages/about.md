@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-I am an incoming freshman at Carnegie Mellon University studying Computer Science.
+I am a freshman at Carnegie Mellon University studying Computer Science.

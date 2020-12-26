@@ -11,16 +11,37 @@ redirect_from:
 Education
 ======
 * B.S in Computer Science, [Carnegie Mellon University](https://www.cs.cmu.edu/), 2024 (expected)
-* [Conestoga High School](https://www.tesd.net/stoga), 2020
+* High School Diploma, [Conestoga High School](https://www.tesd.net/stoga), 2020
 
 Work experience
 ======
-* September 2018 - Present: Intern (as part of independent study)
-  * [Vertex Inc. Innovation Labs](https://www.vertexinc.com/vertex-innovation-labs/overview)
-  * As part of my computer science independent studies in high school, I worked with and shadowed the Innovation Labs team on implementing ML techniques in the field of taxation.
-
 * November 2018 - August 2020: Shelving Assistant
   * [Tredyffrin Public Library](https://www.tredyffrinlibraries.org/tredyffrin-public-library/general-information/)
+  * Quickly learned the library procedures and applied them to support the team
+  * Provided new suggestions, computer tools like macros and training to senior volunteers to efficiently manage a few tasks
+  * Created tools for the library to help capture information my manager could track
+  * Commended for my attention to detail and contributions
+* January 2019 - Jul 2020: Intern (as part of independent study)
+  * [Vertex Inc. Innovation Labs](https://www.vertexinc.com/vertex-innovation-labs/overview)
+  * Observed and shadowed business and technical resources at the Innovation Labs
+  * Got first hand exposure to the corporate environment and saw what was involved in bringing a machine learning application to market in the domain of taxation
+  * Proposed a few ideas and became an important component in both experiment design and execution
+  * Attended virtual staff training sessions where experts from industry and academia addressed senior business and technical resources
+
+Leadership and Volunteer Experience
+======
+* October 2016 - November 2019: Library Volunteer
+  * [Tredyffrin Public Library](https://www.tredyffrinlibraries.org/tredyffrin-public-library/general-information/)
+  * Independently handled several media processing tasks.
+  * Initiated several recurring community service and engagement events, including the annual Diwali celebration which involved around 100 people in 2018 and 400 people in 2019.
+  * Was instrumental in involving local politicians in these events - State Senator Andy Dinniman, Rep. Melissa Schusterman, and School Board members attended in 2019.
+  * Spearheaded a district-wide food drive, raising 2659 lbs of food for Philabundance through donations from families in every school in the district.
+* August 2018 - June 2020: Friends Fitness Program Peer Mentor
+  * [Youth Mentoring Partnership](https://youthmp.org/programs/)
+  * Worked as a peer mentor to support underprivileged students work out and set academic, social, and physical SMART goals, while doing the same myself.
+  * Motivated my mentee to improve his effort and discover the benefits of dedicating oneself to a goal, which had a positive influence on this student.
+* June 2015 - Present: Founder
+  * [The Kandil Project](https://mdkar.github.io/music+art/kandil-project/)
 
 Awards & Honors
 ======
@@ -35,7 +56,8 @@ Awards & Honors
 * PMEA District 12 Choir - 2019 and 2020
 * College Board National AP Scholar
 
-* Conestoga High School
+<details>
+<summary>* Conestoga High School </summary>
   * US Air Force Math and Science Award - June 2020
   * Choir Director's Award - June 2020
   * Rochester Institute of Technology Innovation and Creativity Award - May 2019
@@ -47,20 +69,16 @@ Awards & Honors
     * Achieving 95 average or higher for all numerically-graded major subjects.
   * National Honor Society
   * Tri-M Music Honor Society
-
-Service and leadership
-======
-* Peer Mentor with [Friends Fitness](https://youthmp.org/programs/), a program by the Youth Mentoring Partnership - since October 2018
-* National Honor Society Peer Tutor
-
-Hobbies
-======
-<ul>{% for post in site.musicart %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
+</details>
 
 Foreign Languages
 ======
 * Marathi - very fluent
 * Spanish - fluent
 * Hindi - conversational
+
+Hobbies
+======
+<ul>{% for post in site.musicart %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
