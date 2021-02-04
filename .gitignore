@@ -1,6 +1,5 @@
 _site/
 
 .DS_Store
-.DS_Store
 
-/Programs/*/*.java
+Programs/*/*.java
