@@ -11,7 +11,7 @@ redirect_from:
 Education
 ======
 * B.S in Computer Science, [Carnegie Mellon University](https://www.cs.cmu.edu/), 2024 (expected)
-  * Relavant Coursework: Principles of Functional Programming, Probability Theory, Matrices and Linear Transformations, Rapid Prototyping Technologies
+  * Relavant Coursework: Intro to Computer Systems, Principles of Functional Programming, Concepts in AI, Probability Theory, Multivariate Calc, Matrices & Linear Transformations, Nature of Language, Rapid Prototyping
   * Activities: [Anvil](https://cmuanvil.wordpress.com/) Education co-chair, [Deewane](https://cmudeewane.com/) A Cappella member
 * Carnegie Mellon University [Summer Session](https://www.cmu.edu/pre-college/academic-programs/summer-session.html) 2019 (4.0 QPA)
   * Courses: Concepts of Mathematics, Principles of Imperative Computation
@@ -77,6 +77,7 @@ Awards & Honors
   * National Honor Society
   * Tri-M Music Honor Society
 </details>
+<br>
 
 Foreign Languages
 ======
@@ -88,12 +89,13 @@ Skills
 ======
 * Programming languages:
   * Java (3+ yrs)
+  * C/C++ (2+ yrs)
   * SML
-  * C/C++
-  * JavaScript
+  * JavaScript (React-Native and Node.js)
 * SOLIDWORKS
 * Git
 * LaTeX
+* Final Cut Pro
 
 Hobbies
 ======
