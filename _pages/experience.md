@@ -11,7 +11,8 @@ redirect_from:
 Education
 ======
 * B.S in Computer Science, [Carnegie Mellon University](https://www.cs.cmu.edu/), 2024 (expected)
-  * Relavant Coursework: Intro to Computer Systems, Principles of Functional Programming, Concepts in AI, Probability Theory, Multivariate Calc, Matrices & Linear Transformations, Nature of Language, Rapid Prototyping
+  * Relavant Coursework: Intro to Computer Systems, Principles of Functional Programming, Concepts in AI, Probability Theory, Multivariate Calc, Matrices & Linear Transformations, Nature of Language, Rapid Prototyping, 
+  * Currently taking: Robot Kinematics and Dynamics, Great Ideas in Theoretical Programming, Business Society & Ethics, Experience Reason & Truth
   * Activities: [Anvil](https://cmuanvil.wordpress.com/) Education co-chair, [Deewane](https://cmudeewane.com/) A Cappella member
 * Carnegie Mellon University [Summer Session](https://www.cmu.edu/pre-college/academic-programs/summer-session.html) 2019 (4.0 QPA)
   * Courses: Concepts of Mathematics, Principles of Imperative Computation

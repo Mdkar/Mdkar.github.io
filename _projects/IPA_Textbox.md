@@ -1,6 +1,6 @@
 ---
 title: "Interactive IPA Chart Textbox"
-excerpt: "A simple userscript/browser extension that adds a text box to the interactive IPA chart at <https://www.ipachart.com/> to copy characters you click on <br/><br/><img src='/images/IPA.png' height='300px'>"
+excerpt: "A simple userscript/browser extension that adds a text box to the interactive IPA chart at <https://www.ipachart.com/> to copy characters you click on <br/><br/><img src='/images/IPA.png' width='300px'>"
 collection: projects
 permalink: /projects/IPA_Textbox/
 date: 2021-2-17
