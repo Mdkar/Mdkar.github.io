@@ -8,4 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-I am a sophmore at Carnegie Mellon University studying Computer Science.
+I am a junior at Carnegie Mellon University studying Computer Science and Robotics.
+
+Check out some of my projects
