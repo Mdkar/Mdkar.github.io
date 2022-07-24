@@ -68,12 +68,18 @@ Foreign Languages
 Skills
 ======
 * Programming languages:
-  * Java (3+ yrs)
-  * C/C++ (2+ yrs)
-  * SML
   * JavaScript (React-Native and Node.js)
+  * Python
+  * C
+  * Java
+  * SML
+  * Matlab
+  * Arduino
+* ROS
+* Unity
 * SOLIDWORKS
 * Git
+* Protobuf
 * LaTeX
 * Final Cut Pro
 
