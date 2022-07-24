@@ -7,11 +7,8 @@ date: 2022-2-6
 ---
 The UndefinedBehavior Block Market bot is a discord bot prototype that facilitates trading of CMU on campus meal blocks. It uses a set of commands to facilitate trading while maintaining privacy and fairness. Sellers can sign up to receive pings when a buyer wants a block in a particular location. Buyers are then messaged with details on who decides to take the order, and the two people can come to an agreement on price. The bot then asks both to record the transation and rate each other (similar to 5 star ratings on Uber). To ensure transparency, a history of your ratings and transations are preserved. 
 
-
 This project was made in less than 24 hours as part of the TartanHacks 2022 hackathon. I worked on mainly connect the discord bot to the Oracle Cloud back end (using JS).
 
-
 The the code can be found [here](https://github.com/Mdkar/UndefinedBehaviorBot)
-
 
 <iframe width="768" height="543" src="https://www.youtube.com/embed/DNhdybgHKlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
