@@ -8,30 +8,9 @@ redirect_from:
 ---
 
 {% include base_path %}
-Education
+Resume
 ======
-* B.S in Computer Science, [Carnegie Mellon University](https://www.cs.cmu.edu/), 2024 (expected)
-  * Relavant Coursework: Intro to Computer Systems, Principles of Functional Programming, Concepts in AI, Probability Theory, Multivariate Calc, Matrices & Linear Transformations, Nature of Language, Rapid Prototyping, 
-  * Currently taking: Robot Kinematics and Dynamics, Great Ideas in Theoretical Programming, Business Society & Ethics, Experience Reason & Truth
-  * Activities: [Anvil](https://cmuanvil.wordpress.com/) Education co-chair, [Deewane](https://cmudeewane.com/) A Cappella member
-* Carnegie Mellon University [Summer Session](https://www.cmu.edu/pre-college/academic-programs/summer-session.html) 2019 (4.0 QPA)
-  * Courses: Concepts of Mathematics, Principles of Imperative Computation
-* High School Diploma, [Conestoga High School](https://www.tesd.net/stoga), 2020
-
-Work Experience
-======
-* November 2018 - August 2020: Shelving Assistant
-  * [Tredyffrin Public Library](https://www.tredyffrinlibraries.org/tredyffrin-public-library/general-information/)
-  * Quickly learned the library procedures and applied them to support the team
-  * Provided new suggestions, computer tools like macros and training to senior volunteers to efficiently manage a few tasks
-  * Created tools for the library to help capture information my manager could track
-  * Commended for my attention to detail and contributions
-* January 2019 - Jul 2020: Intern (as part of independent study)
-  * [Vertex Inc. Innovation Labs](https://www.vertexinc.com/vertex-innovation-labs/overview)
-  * Observed and shadowed business and technical resources at the Innovation Labs
-  * Got first hand exposure to the corporate environment and saw what was involved in bringing a machine learning application to market in the domain of taxation
-  * Proposed a few ideas and became an important component in both experiment design and execution
-  * Attended virtual staff training sessions where experts from industry and academia addressed senior business and technical resources
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vSs4T63JCQh8q0zt4BT9RUQfVxeMsM9X3Zg7WdjfaenG52ofK7IeOYn__JYAyKk4EulJ0nWawjkXVid/pub?embedded=true"></iframe>
 
 Leadership and Volunteer Experience
 ======
