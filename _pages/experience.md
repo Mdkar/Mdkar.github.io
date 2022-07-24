@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 Resume
 ======
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vSs4T63JCQh8q0zt4BT9RUQfVxeMsM9X3Zg7WdjfaenG52ofK7IeOYn__JYAyKk4EulJ0nWawjkXVid/pub?embedded=true"></iframe>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vSs4T63JCQh8q0zt4BT9RUQfVxeMsM9X3Zg7WdjfaenG52ofK7IeOYn__JYAyKk4EulJ0nWawjkXVid/pub?embedded=true" width="100%" height="400"></iframe>
 
 Leadership and Volunteer Experience
 ======
