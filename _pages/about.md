@@ -8,6 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a junior at Carnegie Mellon University studying Computer Science and Robotics.
+I am studying Computer Science at Carnegie Mellon University.
+I intend to complete my Master's in Computer Science (Research Thesis) by May 2024
 
 Check out some of my projects
+
+*Site last updated: 4/20/2023*

@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 Resume
 ======
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vSs4T63JCQh8q0zt4BT9RUQfVxeMsM9X3Zg7WdjfaenG52ofK7IeOYn__JYAyKk4EulJ0nWawjkXVid/pub?embedded=true" width="100%" height="400"></iframe>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vRyGbTMOt8uzoTKriDaB2g0vbM3RPNPq5UiL818__QEnArNRjtzr4_QANd21gE1jzuEeRTUxAIiCYN9/pub?embedded=true" width="100%" height="400"></iframe>
 
 Leadership and Volunteer Experience
 ======
@@ -61,8 +61,8 @@ Awards & Honors
 
 Foreign Languages
 ======
-* Marathi - very fluent
-* Spanish - fluent
+* Marathi - fluent
+* Spanish - conversational
 * Hindi - conversational
 
 Skills
@@ -71,6 +71,7 @@ Skills
   * JavaScript (React-Native and Node.js)
   * Python
   * C
+  * Go
   * Java
   * SML
   * Matlab
