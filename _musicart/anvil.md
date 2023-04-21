@@ -1,6 +1,6 @@
 ---
 title: "CMU Anvil - A Maker Club"
-excerpt: "Current Education Co-Chair<br/><br/><img src='/images/Anvil.png'>"
+excerpt: "President<br/><br/><img src='/images/Anvil.png'>"
 collection: musicart
 date: 2021-8-1
 ---

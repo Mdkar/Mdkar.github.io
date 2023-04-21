@@ -1,6 +1,6 @@
 ---
 title: "SpeechWatch"
-excerpt: "SpeechWatch is a GPT-3.5 powered website and browser extension that points out hate speech and disinformation in YouTube videos"
+excerpt: "SpeechWatch is a GPT-3.5 powered website and browser extension that points out hate speech and disinformation in YouTube videos
 <br/><br/><img src='/images/SpeechWatch.png'>"
 collection: projects
 permalink: /projects/SpeechWatch/

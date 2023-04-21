@@ -1,6 +1,6 @@
 ---
 title: "Mobot"
-excerpt: "My attempts at the annual Mobot races at CMU Carnival"
+excerpt: "My attempts at the annual Mobot races at CMU Carnival
 <br/><br/><img src='/images/mobot.jpg'>"
 collection: projects
 permalink: /projects/mobot/
