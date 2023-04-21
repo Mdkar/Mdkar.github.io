@@ -4,7 +4,7 @@ excerpt: "My attempts at the annual Mobot races at CMU Carnival"
 <br/><br/><img src='/images/mobot.jpg'>"
 collection: projects
 permalink: /projects/mobot/
-date: 2023-14-4
+date: 2022-4-14
 ---
 The [Mobot](https://www.cs.cmu.edu/mobot/) Slalom Race is an annual robotics competition held during CMU's Carnival. I have participated the past 2 years. Most contestants (including myself) didn't spend more than a few hours working on their robots, but it is still fun.
 
