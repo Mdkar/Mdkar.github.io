@@ -1,7 +1,7 @@
 ---
 title: "FairJams"
 excerpt: "FairJams is an app that creates provably fair music playlists. It connects with Spotify and uses fast and innovative algorithms from fair division research
-<br/><br/><img src='/images/FairJams.png' height='300px'>"
+<br/><br/><img src='/images/FairJams.png' style='height: 300px'>"
 collection: projects
 permalink: /projects/FairJams/
 date: 2021-10-2
