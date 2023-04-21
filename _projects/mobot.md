@@ -1,7 +1,7 @@
 ---
 title: "Mobot"
 excerpt: "My attempts at the annual Mobot races at CMU Carnival
-<br/><br/><img src='/images/mobot.jpg'>"
+<br/><br/><img src='/images/mobot.jpg' height='300px'>"
 collection: projects
 permalink: /projects/mobot/
 date: 2022-4-14
