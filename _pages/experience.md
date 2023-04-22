@@ -52,7 +52,7 @@ Awards & Honors
   * Conestoga Service and Leadership Award - 2017, 2018, 2019, and 2020
     * Students are honored for contributing their time and energy to making CHS a special place
   * Chester County Academic Competition (JV) 1st place - 2018
-  * Distinguised Honor Roll - 2017, 2018, 2019, 2020
+  * Distinguished Honor Roll - 2017, 2018, 2019, 2020
     * Achieving 95 average or higher for all numerically-graded major subjects.
   * National Honor Society
   * Tri-M Music Honor Society

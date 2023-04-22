@@ -13,7 +13,7 @@ Back end: Node.js
 Made in collaboration with [Himanshu Biradar](https://www.linkedin.com/in/himanshu-biradar-7a4b601b5/) and others
 
 <br>
-These screengrabs highlight various functions I personalally implemented, such as friendships and searching for players
+These screengrabs highlight various functions I personally implemented, such as friendships and searching for players
 
 [Video](https://user-images.githubusercontent.com/49220077/127758768-8c8e8c72-9a03-4dd5-9887-3feb74ccf65d.mp4)
 
