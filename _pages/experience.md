@@ -12,6 +12,8 @@ Resume
 ======
 <iframe src="https://docs.google.com/document/d/e/2PACX-1vRyGbTMOt8uzoTKriDaB2g0vbM3RPNPq5UiL818__QEnArNRjtzr4_QANd21gE1jzuEeRTUxAIiCYN9/pub?embedded=true" width="100%" height="400"></iframe>
 
+# [Courses Taken at CMU](/courses/)
+
 Leadership and Volunteer Experience
 ======
 * October 2016 - November 2019: Library Volunteer
