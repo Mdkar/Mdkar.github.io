@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 Resume
 ======
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vRyGbTMOt8uzoTKriDaB2g0vbM3RPNPq5UiL818__QEnArNRjtzr4_QANd21gE1jzuEeRTUxAIiCYN9/pub?embedded=true" width="100%" height="400"></iframe>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vScZlGTb0cWrnFB2Qx6sVjXndZypR003UuGWIDSbxI79L_TrNgPRVYaJ2pTK3JLB4b4jVqAEj71hbH8/pub?embedded=true" width="100%" height="400"></iframe>
 
 # [Courses Taken at CMU](/courses/)
 
