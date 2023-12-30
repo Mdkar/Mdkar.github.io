@@ -1,6 +1,6 @@
 ---
 title: "Deep Learning Framework with Apple M1 Support"
-excerpt: "Final project for Deep Learning Systems course (10-714) at CMU. I implemented an NDArray backend for the M1 series of Macs using Metal-cpp.<br/><br/><img src='https://developer.apple.com/news/images/og/metal-og.jpg'>"
+excerpt: "Final project for Deep Learning Systems course (10-714) at CMU. I implemented an NDArray backend for the M1 series of Macs using Metal-cpp.<br/><br/><img src='https://developer.apple.com/news/images/og/metal-og.jpg' style='height: 300px'>"
 collection: projects
 permalink: /projects/MetalNeedle/
 date: 2023-12-1
