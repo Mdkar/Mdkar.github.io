@@ -1,6 +1,6 @@
 ---
 title: "Obstacle Assistant for Visually Impaired"
-excerpt: "Final project for Mobile and Pervasive Computing course (15-821) at CMU. I wrote a Google Glass app and helped create a system to help blind people avoid overhanging obstacles.<br/><br/><img src='/images/ObjA4VI.jpeg'>"
+excerpt: "Final project for Mobile and Pervasive Computing course (15-821) at CMU. I wrote a Google Glass app and helped create a system to help blind people avoid overhanging obstacles.<br/><br/><img src='/images/ObjA4VI.jpg'>"
 collection: projects
 permalink: /projects/GoogleGlass/
 date: 2023-12-1
