@@ -152,19 +152,19 @@ We ran each of these tests 10 times and averaged the results per execution. The 
 We were able to successfully implement all the same operations as the CUDA and CPU backends.
 
 This graph shows average execution times of matrix multiplication using the Metal backend.
-![Matmul M1 GPU](https://lh3.googleusercontent.com/u/2/drive-viewer/AEYmBYTjPGDYuajchVdfkHnJP-XWZ4suPx6iFqy-BANV4mGf1TBjLmDeuImmBITKoL0PGCdktnpDFFfmzvoLZsp12jxkves_vg=w2912-h1654)
+![Matmul M1 GPU](../images/dls/figure4.png)
 
 ### M1 CPU vs GPU
 
 Comparing these times with the M1 CPU's times clearly shows why GPU acceleration is preferable. Multiplying two 500x500 matrices takes 0.15s on the CPU but only 0.007s on the GPU. This is over a 2x speedup. As the CPU caches fill up, it becomes even slower, giving a 60x speedup for size 1750.
 
-![Matmul M1 CPU vs GPU](https://lh3.googleusercontent.com/u/2/drive-viewer/AK7aPaAOfdKdd3uy5XL6rf7JDSSeOF1Wvy_BgLDBY7yTsBbGxnBqx-tJvWzO33YnFJtvltwU-76uG6Qn4hScb_8Jiw8_XM-rCw=w2912-h1654)
+![Matmul M1 CPU vs GPU](../images/dls/figure2.png)
 
 The CPU execution time suddenly drops at size 2000, but this is not a mistake. Further testing showed there was a similar fast execution time for size 3000, but sizes 2500 and 3500 took 20 and 60 seconds each. Our best guess is that this is either due to bugs in our CPU implementation or effect of how the M1 CPU handles caching and swap memory.
 
 Due to a lack of time, we did not get to finish implementing an optimized matmul (we used the naive method). However, we were happy to see that our unoptimized GPU implementation could still compete with Numpy's optimized CPU implentation. In this test, the CPU line is the execution time of Numpy's matmul running on the M1 CPU, while the GPU line does the same using Needle and our Metal backend.
 
-![Matmul Needle vs Numpy](https://lh3.googleusercontent.com/u/2/drive-viewer/AK7aPaDtpdQEXJgZVgsaAwqSxfb5VI3yUjHENzdjFoAJUufxT585qLTJYzyBKAPLeg6od3WvxL2TStQFPcQrHjVbRO39Ha_Shg=w2912-h1654)
+![Matmul Needle vs Numpy](../images/dls/figure6.png)
 
 Even without optimized code, the M1 GPU's capabilities allow it to perform on par with the Numpy on CPU.
 
@@ -172,7 +172,7 @@ Interestingly, our CPU implementation also narrowly beat the GPU one for matmul 
 
 This can also be seen in the execution times for elementwise operations. The following graph of elementwise addition times shows a marked increase in CPU execution time for matrices above the 5000x5000 size. Overhead causes the GPU time to be slightly slower at this size and smaller.
 
-![Ewise Add M1 CPU vs GPU](https://lh3.googleusercontent.com/u/2/drive-viewer/AK7aPaCrX9ej6Ultcs-Hz9eYPqjHDwL5eZ5oBporlSEI22Kfvs2n-JdiotpLMcKopK9FJvc3S2R3jfLTXVuUUFAgkfeRagexNg=w2912-h1654)
+![Ewise Add M1 CPU vs GPU](../images/dls/figure5.png)
 
 
 ### M1 GPU vs Tesla T4 GPU and others
@@ -183,7 +183,7 @@ For the duration of this class, one of our group members (Mihir) used a low end 
 
 This is how the 3 GPUs compared running matmul:
 
-![matmul GPU comparison](https://lh3.googleusercontent.com/u/2/drive-viewer/AK7aPaDxIL0JArj_4G5cYso68VUhm2D2OuRlNilaagUcqyK1evbKI3pk3fBasMIE3JJEcV7OVDREMVnVvHT7SNAhqCSKIDrH=w2912-h1654)
+![matmul GPU comparison](../images/dls/figure7.png)
 
 As expected, the P1000 performed significantly worse than the other two, especially with larger matrices. Comparing the 2500x2500 tests, the T4 GPU finished in 0.214s, M1 finished in 0.337s, and P1000 finished in 1.506s. Surprisingly, the T4 performed only 36.5% faster than the M1, hinting that our M1 backend implementation is at least (if not more) efficient at matrix multiplication than our CUDA implementation from HW3.
 
